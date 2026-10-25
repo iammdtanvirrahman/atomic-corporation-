@@ -69,7 +69,9 @@ The expected project-site URL is `https://iammdtanvirrahman.github.io/atomic-cor
 
 ## Contact
 
-At this stage, the contact page offers a public GitHub inquiry form. GitHub issues are public; never include passwords, API keys, private personal data, or confidential information in them.
+Official company email: **atomic.corporation.tech@gmail.com**.
+
+The contact page also offers a public GitHub inquiry form for non-sensitive feedback. GitHub issues are public; never include passwords, API keys, private personal data, or confidential information in them.
 
 ## Security
 
