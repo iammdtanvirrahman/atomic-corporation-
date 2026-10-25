@@ -94,3 +94,6 @@ h1,h2,h3,p{margin-top:0}h1{font-size:clamp(64px,7.2vw,104px);line-height:.99;let
 @media(max-width:700px){
  .page-hero{padding-block:72px 62px}.page-hero h1{font-size:clamp(46px,12vw,68px);margin-top:25px}.page-hero .page-intro{font-size:14px}.page-body{padding-block:55px 80px}.page-content-grid,.contact-grid{grid-template-columns:1fr}.info-card{min-height:0}.page-section{padding-block:27px}.page-section .lead{font-size:15px}.contact-panel{padding:23px}.nav-links>a[aria-current="page"]:not(.nav-cta)::after{display:none}
 }
+
+.footer-email{color:#bdbdc5;white-space:nowrap;transition:color .2s}.footer-email:hover{color:var(--red)}
+@media(max-width:700px){.footer-email{white-space:normal;overflow-wrap:anywhere}}
