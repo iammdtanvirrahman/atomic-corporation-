@@ -59,7 +59,7 @@ Then open `http://localhost:8000`. Alternatively, open `index.html` directly, al
 
 ## GitHub Pages deployment
 
-The repository's GitHub Pages deployment is currently handled by GitHub's managed Pages build-and-deployment workflow, which has reported successful runs for this repository. Avoid adding a second deployment workflow unless the Pages source is intentionally changed.
+The repository's GitHub Pages deployment is currently handled by GitHub's managed Pages build-and-deployment workflow. Each push to `main` should trigger a site build; confirm the newest **pages build and deployment** run succeeds before sharing the latest changes. Avoid adding a second deployment workflow unless the Pages source is intentionally changed.
 
 1. Open the repository's **Actions** tab and check the latest **pages build and deployment** run.
 2. Open **Settings → Pages** to confirm the configured source and public URL.
