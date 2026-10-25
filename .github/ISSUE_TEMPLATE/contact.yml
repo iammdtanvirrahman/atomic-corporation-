@@ -1,0 +1,37 @@
+name: Website or product inquiry
+description: Send feedback or a collaboration idea to Atomic Corporation
+title: "[Website inquiry]: "
+labels: ["website-contact"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out. **This is a public GitHub issue.** Do not include passwords, personal documents, private contact details, API keys, confidential business information, or security vulnerability details.
+  - type: dropdown
+    id: inquiry_type
+    attributes:
+      label: Type of inquiry
+      description: What is your message about?
+      options:
+        - Website feedback
+        - Product idea
+        - Research or technical collaboration
+        - Bug report
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Explain the problem, idea, or feedback without sharing sensitive information.
+      placeholder: What should we know?
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Public references (optional)
+      description: Add public URLs or non-confidential context that helps explain your inquiry.
+    validations:
+      required: false
