@@ -59,12 +59,11 @@ Then open `http://localhost:8000`. Alternatively, open `index.html` directly, al
 
 ## GitHub Pages deployment
 
-The `.github/workflows/pages.yml` workflow publishes the repository root to GitHub Pages on pushes to `main`.
+The repository's GitHub Pages deployment is currently handled by GitHub's managed Pages build-and-deployment workflow, which has reported successful runs for this repository. Avoid adding a second deployment workflow unless the Pages source is intentionally changed.
 
-1. Open **Settings → Pages** for this repository.
-2. Set the deployment source to **GitHub Actions** if it is not already selected.
-3. Open the repository's **Actions** tab and confirm the deploy workflow succeeds.
-4. Use the published Pages URL shown by the deployment workflow.
+1. Open the repository's **Actions** tab and check the latest **pages build and deployment** run.
+2. Open **Settings → Pages** to confirm the configured source and public URL.
+3. Use the published Pages URL shown by GitHub Pages. The expected project-site URL is below if Pages is enabled for this repository.
 
 The expected project-site URL is `https://iammdtanvirrahman.github.io/atomic-corporation-/` if GitHub Pages is enabled for this repository.
 
