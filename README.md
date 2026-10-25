@@ -2,70 +2,87 @@
 
 **Engineering Tomorrow.**
 
-Atomic Corporation is an early-stage technology company with a long-term ambition to build useful products across artificial intelligence, software engineering, scientific computing, and advanced technology.
+Atomic Corporation is an early-stage technology venture with a long-term ambition to build useful products across AI, software engineering, scientific computing, and advanced technology.
+
+> **Current status:** Foundation stage. Product and research areas on the website are plans and areas of exploration unless explicitly described as launched.
+
+## Public website
+
+- Home: [index.html](index.html)
+- About: [about.html](about.html)
+- Technology roadmap: [products.html](products.html)
+- Research direction: [research.html](research.html)
+- Contact: [contact.html](contact.html)
+- Privacy notice: [privacy.html](privacy.html)
+- Terms of use: [terms.html](terms.html)
+- Custom not-found page: [404.html](404.html)
+
+The website is a static site built with HTML, CSS, and lightweight JavaScript. It does not require PHP or a database for the current scope.
+
+## Brand
+
+- **Name:** Atomic Corporation
+- **Tagline:** Engineering Tomorrow.
+- **Visual direction:** Minimal, scientific, premium, and engineering-focused.
+- **Palette:** Obsidian `#050505`, Crimson `#D7263D`, Ivory `#F5F5F0`.
 
 ## Mission
 
 Build reliable, useful technologies that solve real problems and contribute to scientific and engineering progress.
 
-## Strategic focus
+## Strategic areas
 
 - **Software:** Web platforms, developer tools, and SaaS products.
-- **AI:** Practical AI-powered workflows, automation, and model evaluation.
+- **AI:** Practical AI-assisted workflows, automation, and model evaluation.
 - **Research:** Reproducible experiments in AI and scientific computing.
-- **Systems:** Future exploration of robotics and embedded technology when resources and validated use cases justify it.
+- **Systems:** Future exploration of robotics and embedded technology when capability and validated use cases justify it.
 
 These are strategic areas, not claims that every division or product is already operational.
 
-## Execution principles
+## Roadmap
 
-1. Solve a clear customer problem before expanding the product portfolio.
-2. Launch a small, measurable minimum viable product (MVP).
-3. Track reliability, user retention, unit economics, and customer feedback.
-4. Use third-party AI services only under their applicable terms and data policies.
-5. Build research capability through reproducible experiments, careful evaluation, and transparent reporting.
-6. Protect user data and keep secrets out of source control.
+1. Validate a real customer problem and choose one first product.
+2. Deliver a small MVP and measure reliability, retention, user value, and per-user cost.
+3. Develop sustainable revenue and improve operations.
+4. Build a focused research programme with reproducible work.
+5. Expand to new technology sectors when evidence, people, and resources justify it.
 
-## Initial roadmap
+## Run locally
 
-### Phase 1 — Foundation
-- Validate a target customer segment and its core problem.
-- Choose one first product and define its MVP scope.
-- Establish a brand system, product architecture, and cost model.
-- Recruit a small group of beta testers.
+Because this is a static site, no backend runtime or package installation is required. From the repository folder, start a local static server, for example:
 
-### Phase 2 — Product validation
-- Ship the MVP and collect structured user feedback.
-- Measure active use, retention, reliability, customer conversion, and per-user cost.
-- Improve the product before committing to additional divisions.
+```bash
+python3 -m http.server 8000
+```
 
-### Phase 3 — Sustainable growth
-- Develop recurring revenue through subscriptions, business plans, services, or licensing where appropriate.
-- Improve operational security, documentation, and customer support.
-- Publish technical notes and reproducible research experiments.
+Then open `http://localhost:8000`. Alternatively, open `index.html` directly, although a local server is preferred when testing relative links.
 
-### Phase 4 — Research-led expansion
-- Select a focused research specialty based on capability and evidence.
-- Explore university and industry collaboration.
-- Expand into additional sectors only when justified by customer demand, technical feasibility, and available resources.
+## GitHub Pages deployment
 
-## Brand direction
+The `.github/workflows/pages.yml` workflow publishes the repository root to GitHub Pages on pushes to `main`.
 
-- **Name:** Atomic Corporation
-- **Tagline:** Engineering Tomorrow.
-- **Visual direction:** Minimal, scientific, premium, and engineering-focused.
-- **Suggested palette:** Obsidian `#050505`, Crimson `#D7263D`, Ivory `#F5F5F0`.
+1. Open **Settings → Pages** for this repository.
+2. Set the deployment source to **GitHub Actions** if it is not already selected.
+3. Open the repository's **Actions** tab and confirm the deploy workflow succeeds.
+4. Use the published Pages URL shown by the deployment workflow.
 
-## Repository status
+The expected project-site URL is `https://iammdtanvirrahman.github.io/atomic-corporation-/` if GitHub Pages is enabled for this repository.
 
-This repository is the starting point for Atomic Corporation's public-facing presence and technical documentation. Product availability, partnerships, research results, and company capabilities should be described accurately and updated as they become real.
+## Contact
 
-## Contributing and security
+At this stage, the contact page offers a public GitHub inquiry form. GitHub issues are public; never include passwords, API keys, private personal data, or confidential information in them.
 
-- Document setup steps and architectural decisions.
-- Never commit API keys, passwords, private customer information, or production credentials.
-- Report security issues privately to the repository owner rather than publishing exploit details.
+## Security
+
+- Never commit API keys, passwords, production credentials, or private customer information.
+- Keep any future API integrations behind a server-side backend.
+- Review external font and hosting provider terms and privacy practices.
+- Use private vulnerability reporting rather than public issue threads for sensitive security reports when available.
+
+## Future work
+
+Before the company starts collecting personal data, accepting payments, or offering paid AI services, implement and review the appropriate backend security, privacy documentation, terms, support, payment compliance, and data-retention controls.
 
 ---
 
-*Planning-stage company description. Roadmap items are intentions, not guarantees.*
+*Roadmap items are intentions, not guarantees. Product availability and research claims should be updated only when they are true.*
