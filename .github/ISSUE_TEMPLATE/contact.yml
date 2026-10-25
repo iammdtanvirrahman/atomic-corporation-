@@ -1,7 +1,6 @@
 name: Website or product inquiry
 description: Send feedback or a collaboration idea to Atomic Corporation
 title: "[Website inquiry]: "
-labels: ["website-contact"]
 body:
   - type: markdown
     attributes:
