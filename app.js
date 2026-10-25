@@ -19,6 +19,17 @@
     document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
     window.addEventListener('resize', () => { if (window.innerWidth > 700) closeMenu(); });
   }
+  const page = document.body.dataset.page;
+  if (page && nav) {
+    nav.querySelectorAll('a[href]').forEach(link => {
+      const target = link.getAttribute('href');
+      if (target === page + '.html' || (page === 'home' && target === 'index.html')) {
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  }
   const year = document.querySelector('#year');
   if (year) year.textContent = String(new Date().getFullYear());
   const revealItems = document.querySelectorAll('.reveal');
